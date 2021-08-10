@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="7dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Enter Student info"
+        android:textSize="24dp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:background="#9EFFFFFF"
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ID "
+        android:padding="5dip"
+        android:textSize="24dp"
+        android:layout_below="@+id/texttitle"
+       android:inputType="numberDecimal"/>
+    <EditText
+        android:padding="5dip"
+        android:layout_marginTop="15dp"
+        android:background="#9EFFFFFF"
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name "
+        android:textSize="24dp"
+        android:layout_below="@+id/name"
+        android:inputType="textPersonName"/>
+
+
+    <EditText
+        android:padding="5dip"
+        android:layout_marginTop="15dp"
+        android:background="#9AFFFFFF"
+        android:id="@+id/dob"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Dept "
+        android:textSize="24dp"
+        android:layout_below="@+id/contact"
+        android:inputType="text"/>
+
+    <ImageButton
+
+        android:id="@+id/btnInsert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dob"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/circle"
+        android:src="@drawable/adduser"
+        android:text="Insert"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:layout_marginTop="15dp"
+        android:src="@drawable/mmedit"
+        android:background="@drawable/circle"
+        android:layout_marginLeft="155dp"
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Update"
+        android:layout_below="@id/btnInsert"/>
+
+
+    <ImageButton
+        android:layout_marginTop="15dp"
+        android:src="@drawable/removeuser"
+        android:background="@drawable/circle"
+        android:layout_marginLeft="155dp"
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Delete"
+        android:layout_below="@id/btnUpdate"/>
+    <ImageButton
+        android:layout_marginTop="15dp"
+        android:src="@drawable/followers"
+        android:background="@drawable/circle"
+        android:layout_marginLeft="155dp"
+        android:id="@+id/btnView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="View"
+        android:layout_below="@id/btnDelete"/>
+
+</RelativeLayout>
